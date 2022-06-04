@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Open Sans";
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    background: url('star.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .card {
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px black;
+    padding: 30px;
+  }
+  
+  input[type="date"] {
+    padding: 0 20px;
+    box-shadow: 2px 4px 5px gray;
+    background-color: #e8e7e7;
+  }
+  input[type="submit"] {
+    /* background-color: #f73668; */
+    background-color: rgb(24, 24, 119);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+    box-shadow: 2px 4px 5px gray;
+  }
+  input[type="submit"]:hover {
+    background-color: #fff;
+    color: rgb(24, 24, 119);
+    border: 2px solid currentColor;
+    box-shadow: 2px 4px 5px gray;
+  }
+  
+  input[type="date"],
+  input[type="submit"] {
+    border-radius: 15px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .card {
+      width: 80vw;
+    }
+  }
+  
